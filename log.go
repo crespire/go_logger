@@ -1,11 +1,15 @@
 package logger
 
 import (
- "fmt"
+	"fmt"
 )
-	 
-var Version string = "1.0"
-	 
+
+var Version string = "0.2.0"
+
 func Log(mess string) {
- fmt.Println("[LOG] " + mess)
+	fmt.Println("[LOG] " + mess)
+}
+
+func Warn(msg string) {
+	fmt.Println("[WARN] ", msg)
 }
